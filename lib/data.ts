@@ -25,18 +25,12 @@ export async function addFeedback(
     entry: Omit<Feedback, "id" | "createdAt">
 ): Promise<Feedback> {
     const list = await getAllFeedback();
-    const nextNumber = list.length + 1;
-    const id = `fb-${String(nextNumber).padStart(3, "0")}`;
-    const createdAt = new Date().toISOString();
-
-    const newFeedback: Feedback = {
-        id,
+    const newEntry: Feedback = {
         ...entry,
-        createdAt,
+        id: `fb-${String(list.length + 1).padStart(3, "0")}`,
+        createdAt: new Date().toISOString(),
     };
-
-    const updatedList = [...list, newFeedback];
-    await fs.writeFile(DATA_PATH, JSON.stringify(updatedList, null, 4), "utf-8");
-
-    return newFeedback;
+    list.push(newEntry);
+    await fs.writeFile(DATA_PATH, JSON.stringify(list, null, 2), "utf-8");
+    return newEntry;
 }
