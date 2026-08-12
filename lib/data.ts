@@ -21,10 +21,22 @@ export async function getFeedbackById(
     return feedbackList.find((item) => item.id === id);
 }
 
-// TODO: Implement addFeedback
-// Generate an id and createdAt, append the entry to the file, return it.
 export async function addFeedback(
     entry: Omit<Feedback, "id" | "createdAt">
 ): Promise<Feedback> {
-    throw new Error("Not implemented");
+    const list = await getAllFeedback();
+    const nextNumber = list.length + 1;
+    const id = `fb-${String(nextNumber).padStart(3, "0")}`;
+    const createdAt = new Date().toISOString();
+
+    const newFeedback: Feedback = {
+        id,
+        ...entry,
+        createdAt,
+    };
+
+    const updatedList = [...list, newFeedback];
+    await fs.writeFile(DATA_PATH, JSON.stringify(updatedList, null, 4), "utf-8");
+
+    return newFeedback;
 }
