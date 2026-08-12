@@ -7,7 +7,26 @@ import {
 } from "@/lib/data";
 
 export async function GET(request: NextRequest) {
-    const feedback = await getAllFeedback();
+    const { searchParams } = request.nextUrl;
+    const courseSlug = searchParams.get("courseSlug");
+    const lessonSlug = searchParams.get("lessonSlug");
+    const minRating = searchParams.get("minRating");
+
+    let feedback = await getAllFeedback();
+
+    if (courseSlug) {
+        feedback = feedback.filter((item) => item.courseSlug === courseSlug);
+    }
+    if (lessonSlug) {
+        feedback = feedback.filter((item) => item.lessonSlug === lessonSlug);
+    }
+    if (minRating !== null) {
+        const minRatingVal = parseFloat(minRating);
+        if (!isNaN(minRatingVal)) {
+            feedback = feedback.filter((item) => item.rating >= minRatingVal);
+        }
+    }
+
     return NextResponse.json(feedback);
 }
 
