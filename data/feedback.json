@@ -1,0 +1,92 @@
+[
+    {
+        "id": "fb-001",
+        "courseSlug": "strength-training",
+        "lessonSlug": "squat-form",
+        "rating": 5,
+        "comment": "Finally understand how to keep my knees and hips aligned during squats. My form feels much more stable now.",
+        "author": "Priya Sharma",
+        "createdAt": "2026-03-01T10:30:00Z"
+    },
+    {
+        "id": "fb-002",
+        "courseSlug": "strength-training",
+        "lessonSlug": "deadlift-basics",
+        "rating": 4,
+        "comment": "Great breakdown of the movement, but I wish there was a side-angle demonstration. I found the hip hinge difficult to judge from the front.",
+        "author": "Marcus Chen",
+        "createdAt": "2026-03-01T14:15:00Z"
+    },
+    {
+        "id": "fb-003",
+        "courseSlug": "yoga-foundations",
+        "lessonSlug": "breathing-basics",
+        "rating": 5,
+        "comment": "I had no idea how much my breathing affected each pose. Slowing down and focusing on it made the whole session feel different.",
+        "author": "Aisha Johnson",
+        "createdAt": "2026-03-02T09:00:00Z"
+    },
+    {
+        "id": "fb-004",
+        "courseSlug": "strength-training",
+        "lessonSlug": "squat-form",
+        "rating": 3,
+        "comment": "Felt a bit rushed. Would have liked more time practicing bodyweight squats before adding resistance.",
+        "author": "Tom Kowalski",
+        "createdAt": "2026-03-02T11:45:00Z"
+    },
+    {
+        "id": "fb-005",
+        "courseSlug": "yoga-foundations",
+        "lessonSlug": "downward-dog",
+        "rating": 5,
+        "comment": "The explanation about distributing weight between my hands and feet finally clicked. The pose feels much more comfortable now.",
+        "author": "Sofia Reyes",
+        "createdAt": "2026-03-03T08:20:00Z"
+    },
+    {
+        "id": "fb-006",
+        "courseSlug": "yoga-foundations",
+        "lessonSlug": "sun-salutation",
+        "rating": 4,
+        "comment": "Good session, but the transition between poses took me a couple of attempts to understand. A slower demonstration would help.",
+        "author": "James Okafor",
+        "createdAt": "2026-03-03T16:00:00Z"
+    },
+    {
+        "id": "fb-007",
+        "courseSlug": "strength-training",
+        "lessonSlug": "push-up-technique",
+        "rating": 5,
+        "comment": "I used to struggle with push-ups. The hand-position and core-engagement tips made a huge difference.",
+        "author": "Lin Wei",
+        "createdAt": "2026-03-04T10:10:00Z"
+    },
+    {
+        "id": "fb-008",
+        "courseSlug": "yoga-foundations",
+        "lessonSlug": "breathing-basics",
+        "rating": 2,
+        "comment": "I already knew most of this from previous yoga classes. I wish there was a faster option for members who already know the fundamentals.",
+        "author": "Derek Miles",
+        "createdAt": "2026-03-04T13:30:00Z"
+    },
+    {
+        "id": "fb-009",
+        "courseSlug": "strength-training",
+        "lessonSlug": "deadlift-basics",
+        "rating": 5,
+        "comment": "Best session in the program. I finally understand how to lift without putting unnecessary strain on my lower back.",
+        "author": "Nora Eriksson",
+        "createdAt": "2026-03-05T09:45:00Z"
+    },
+    {
+        "id": "fb-010",
+        "courseSlug": "hiit-training",
+        "lessonSlug": "interval-basics",
+        "rating": 4,
+        "comment": "The work-to-rest timing was really helpful. I managed to finish the full workout without burning out halfway through.",
+        "author": "Priya Sharma",
+        "createdAt": "2026-03-05T15:20:00Z"
+    }
+]
