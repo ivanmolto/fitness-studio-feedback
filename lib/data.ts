@@ -14,12 +14,11 @@ export async function getAllFeedback(): Promise<Feedback[]> {
     }
 }
 
-// TODO: Implement getFeedbackById
-// Find a single entry by its id, or return undefined.
 export async function getFeedbackById(
     id: string
 ): Promise<Feedback | undefined> {
-    return undefined;
+    const feedbackList = await getAllFeedback();
+    return feedbackList.find((item) => item.id === id);
 }
 
 // TODO: Implement addFeedback
